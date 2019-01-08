@@ -1,15 +1,29 @@
 <?php
-    $personne = array(
-        "nom"=> readline('Entrez votre nom : '),
-        "prenom" => readline('Entrez votre prenom : '),
-        "age" => readline('Entrez votre age : ')
-    );
+    $personnes = array(
+        'personne1'=>[
+            "nom"=>  readline('Entrez votre nom : '),
+            "prenom" => readline('Entrez votre prenom : '),
+            "age" =>  readline('Entrez votre age : ')
+            ],
+        'personne_2'=>[
+            "nom"=>  readline('Entrez votre nom : '),
+            "prenom" => readline('Entrez votre prenom : '),
+            "age" =>  readline('Entrez votre age : ')
+            ],
+        'personne_3'=>[
+            "nom"=>  readline('Entrez votre nom : '),
+            "prenom" => readline('Entrez votre prenom : '),
+            "age" =>  readline('Entrez votre age : ')
+            ],
+        );
 
-    if ($personne['age'] > 18){
-        echo 'vous avez plus de 18 ans';
-    } elseif ($personne['age'] < 18) {
-        echo 'vous avez moins de 18 ans';
-    } else {
-        echo 'vous avez 18 ans';
+
+
+        foreach ($personnes as $personne) {
+            if ($personne['age'] > 18){
+            echo $personne['prenom']. ' a plus de 18 ans'. "\n" ;
+        }
     }
+
+
  ?>
